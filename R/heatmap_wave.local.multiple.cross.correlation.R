@@ -1,4 +1,4 @@
-heatmap_wave.local.multiple.cross.correlation <- #3.1.0
+heatmap_wave.local.multiple.cross.correlation <- #3.1.1
   function(Lst, lmax, lag.first=FALSE, xaxt="s", ci=NULL, pdf.write=NULL) {
     ##Producing cross-correlation plot
     if (xaxt[1]!="s"){
