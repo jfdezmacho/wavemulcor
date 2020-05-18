@@ -1,0 +1,21 @@
+2020-05-18 Version 3.1.1: New heatmap_ routines included.
+2020-03-05 Version 3.1.0: New plot_ routines included.
+2020-02-01 Version 3.0.0: New .regression routines incorporate wavelet (and wave-local) regressions.
+        That is, coefficients and c.i.'s, standard deviations, t-ratios and p-values are reported
+        for all wavelet scales, time lags (.cross.regression) and over time (local. routines).
+        They extend all previous routines; in other words, they also calculate wavelet (and wave-local)
+        correlations as before.
+        Nevertheless, previous .correlation routines are also kept for back compatibility.
+2020-01-20 Version 2.2.3: wave.multiple.cross.correlation: c.i.'s calculation added;
+        new argument p added (with default=.975).
+        wave.multiple.correlation: Set argument N's default as unevaluated promise.
+        It is used only to calculate c.i.'s df and actually not needed as it can be obtained
+        from length(xx[[1]][[1]]). (Note it is not actually dropped for back compatibility).
+2020-01-20 Version 2.2.2: Bivariate case: allow for negative correlations.
+        Multivariate case: correct confidence interval: truncate to nonnegative values.
+2018-06-08 Version 2.2.1 released.
+        Version 2.2 incorporates an auxiliary function local.multiple.correlation.R
+        that calculates local multiple correlations (LMC).
+        They are calculated by letting move along time
+        a window of weighted time series values around t. Any of the six weight
+        functions mentioned in previous releases can be used.

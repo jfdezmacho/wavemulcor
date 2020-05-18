@@ -1,0 +1,11 @@
+exportPattern("^[[:alpha:]]+")
+importFrom("stats", "cor", "qnorm")
+importFrom("stats", "lm", "qt", "setNames")
+importFrom("waveslim", "modwt", "brick.wall", "phase.shift")
+importFrom("grDevices", "cairo_pdf", "dev.off", "gray", "rgb")
+importFrom("graphics", "abline", "axis", "matlines", "matplot",
+           "mtext", "par", "polygon", "text", "lines",
+           "title", "grconvertX", "grconvertY")
+importFrom("plot3D", "image2D", "jet.col")
+importFrom("RColorBrewer", "brewer.pal")
+
