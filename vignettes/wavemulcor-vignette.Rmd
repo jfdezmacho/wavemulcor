@@ -240,7 +240,7 @@ the cross-correlation output can be fed into a *heatmap_* auxiliary routine to o
 
 ```{r label=heat_wmcc, echo=-1, results='hide'}
 ##Producing correlation heat map
-heatmap_wave.multiple.cross.correlation(Lst, lmax) #, xaxt="s", pdf.write=NULL)
+heatmap_wave.multiple.cross.correlation(Lst, lmax) #, by=3, ci=NULL, pdf.write=NULL)
 ```
 
 
@@ -308,7 +308,7 @@ The output can be fed into a *heatmap_* auxiliary routine to obtain a standard h
 
 ```{r label=heat_wlmc, echo=-1, results='hide'}
 ##Producing correlation heat map
-heatmap_wave.local.multiple.correlation(Lst) #, xaxt="s", pdf.write=NULL)
+heatmap_wave.local.multiple.correlation(Lst) #, xaxt="s", ci=NULL, pdf.write=NULL)
 ```
 
 The figure shows how the WLMC evolves both over time and across wavelet levels, the latter shown as time periods $(2^j,2^{j+1}]$ after conversion into their corresponding time units intervals.
@@ -365,7 +365,7 @@ For example, _heatmap_wave.local.multiple.cross.correlation_ produces a page of 
 
 ```{r label=heat_wlmcc_lag, echo=-1, results='hide'}
 ##Producing cross-correlation heat map
-heatmap_wave.local.multiple.cross.correlation(Lst, lmax, lag.first=FALSE) 
+heatmap_wave.local.multiple.cross.correlation(Lst, lmax=lmax, lag.first=FALSE) 
              #, xaxt="s", ci=NULL, pdf.write=NULL)
 ```
 
