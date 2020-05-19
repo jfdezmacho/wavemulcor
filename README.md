@@ -11,20 +11,19 @@ JFM
 
 [![CRAN
 status](https://www.r-pkg.org/badges/version/wavemulcor)](https://cran.r-project.org/package=wavemulcor)
-<!-- [![R build status](https://github.com/jfdezmacho/wavemulcor/workflows/R-CMD-check/badge.svg)](https://github.com/jfdezmacho/wavemulcor/actions?workflow=R-CMD-check) -->
+[![R build
+status](https://github.com/jfdezmacho/wavemulcor/workflows/R-CMD-check/badge.svg)](https://github.com/jfdezmacho/wavemulcor/actions)
 <!-- [![Codecov test coverage](https://codecov.io/gh/jfdezmacho/wavemulcor/branch/master/graph/badge.svg)](https://codecov.io/gh/wavemulcor?branch=master) -->
 <!-- [![R build status](https://github.com/jfdezmacho/wavemulcor/workflows/R-CMD-check/badge.svg)](https://github.com/jfdezmacho/wavemulcor/actions) -->
 <!-- badges: end -->
 
-Wavelet Routines for Global and Local Multiple Regression and
-Correlation (version 3.3.1)
-
 ## Overview
 
-wavemulcor is …
+wavemulcor is a set of Wavelet Routines for Global and Local Multiple
+Regression and Correlation The latest development version is 3.3.1.
 
 If you are new to wavemulcor, the best place to start is the [wavemulcor
-webside page](https://jfdezmacho.github.io/wavemulcor/)
+webside page](https://jfdezmacho.github.io/wavemulcor/).
 
 <!-- ## Backends -->
 
