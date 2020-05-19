@@ -1,11 +1,11 @@
-README
+wavemulcor
 ================
-JF
+JFM
 5/19/2020
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# wavemulcor <a href='https://jfdezmacho.github.io/wavemulcor/'><img src='docs/icons/devil02.gif' align="right" height="139" /></a>
+<a href='https://jfdezmacho.github.io/wavemulcor/'><img src='docs/icons/devil02.gif' align="right" height="139" /></a>
 
 <!-- badges: start -->
 

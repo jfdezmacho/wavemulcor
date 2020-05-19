@@ -1,6 +1,6 @@
 ---
-title: "README"
-author: "JF"
+title: "wavemulcor"
+author: "JFM"
 date: "5/19/2020"
 output: github_document
 ---
@@ -17,7 +17,7 @@ knitr::opts_chunk$set(
 )
 ```
 
-# wavemulcor <a href='https://jfdezmacho.github.io/wavemulcor/'><img src='docs/icons/devil02.gif' align="right" height="139" /></a>
+<a href='https://jfdezmacho.github.io/wavemulcor/'><img src='docs/icons/devil02.gif' align="right" height="139" /></a>
 
 <!-- badges: start -->
 [![CRAN status](https://www.r-pkg.org/badges/version/wavemulcor)](https://cran.r-project.org/package=wavemulcor)
