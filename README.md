@@ -5,7 +5,7 @@ JFM
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-<a href='https://jfdezmacho.github.io/wavemulcor/'><img src='docs/icons/devil02.gif' align="right" height="139" /></a>
+<a href='https://jfdezmacho.github.io/wavemulcor/'><img src='docs/icons/wmc_logo.svg' align="right" height="139" /></a>
 
 <!-- badges: start -->
 
