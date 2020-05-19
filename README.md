@@ -1,7 +1,7 @@
 wavemulcor
 ================
 JFM
-5/19/2020
+2020-05-19
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
