@@ -36,8 +36,8 @@ install.packages("wavemulcor")
 
 ### Development version
 
-To get a bug fix or to use a feature from the development version, you
-can install the development version of wavemulcor from GitHub:
+To get a bug fix or to use a feature under development, you can install
+the development version of wavemulcor from GitHub:
 
 ``` r
 # install.packages("devtools")
