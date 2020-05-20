@@ -1,7 +1,7 @@
 wavemulcor
 ================
 JFM
-2020-05-20
+2020-05-21
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
@@ -16,7 +16,7 @@ downloads](http://cranlogs.r-pkg.org/badges/grand-total/wavemulcor)](https://CRA
 [![R build
 status](https://github.com/jfdezmacho/wavemulcor/workflows/R-CMD-check/badge.svg)](https://github.com/jfdezmacho/wavemulcor/actions)
 [![Codecov test
-coverage](https://codecov.io/gh/jfdezmacho/wavemulcor/branch/master/graph/badge.svg)](https://codecov.io/gh/jfdezmacho/wavemulcor)
+coverage](https://codecov.io/gh/jfdezmacho/wavemulcor/branch/master/graph/badge.svg)](https://codecov.io/gh/jfdezmacho/wavemulcor?branch=master)
 <!-- badges: end -->
 
 ## Overview
