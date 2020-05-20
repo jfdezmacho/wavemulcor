@@ -20,10 +20,10 @@ status](https://github.com/jfdezmacho/wavemulcor/workflows/R-CMD-check/badge.svg
 ## Overview
 
 wavemulcor is a set of Wavelet Routines for Global and Local Multiple
-Regression and Correlation The latest development version is 3.1.1.
+Regression and Correlation. The latest development version is 3.1.1.
 
 If you are new to wavemulcor, the best place to start is the [wavemulcor
-webside page](https://jfdezmacho.github.io/wavemulcor/).
+webpage](https://jfdezmacho.github.io/wavemulcor/).
 
 <!-- ## Backends -->
 
