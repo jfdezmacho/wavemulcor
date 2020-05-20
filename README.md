@@ -14,7 +14,7 @@ status](https://www.r-pkg.org/badges/version/wavemulcor)](https://cran.r-project
 [![R build
 status](https://github.com/jfdezmacho/wavemulcor/workflows/R-CMD-check/badge.svg)](https://github.com/jfdezmacho/wavemulcor/actions)
 [![Codecov test
-coverage](https://codecov.io/gh/jfdezmacho/wavemulcor/branch/master/graph/badge.svg)](https://codecov.io/gh/jfdezmacho/wavemulcor?branch=master)
+coverage](https://codecov.io/gh/jfdezmacho/wavemulcor/branch/master/graph/badge.svg)](https://codecov.io/gh/jfdezmacho/wavemulcor)
 <!-- badges: end -->
 
 ## Overview
