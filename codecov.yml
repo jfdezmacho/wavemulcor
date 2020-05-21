@@ -3,21 +3,19 @@ codecov:
   require_ci_to_pass: yes
 
 coverage:
-  status:
-    project:
-      default:
-        target: auto
-        threshold: 1%
-        informational: true
-    patch:
-      default:
-        target: auto
-        threshold: 1%
-        informational: true
+  precision: 2
+  round: down
+  range: "70...100"
 
-comment: false
-language: R
-sudo: false
-cache: packages
-after_success:
-- Rscript -e 'covr::codecov()'
+parsers:
+  gcov:
+    branch_detection:
+      conditional: yes
+      loop: yes
+      method: no
+      macro: no
+
+comment:
+  layout: "reach,diff,flags,tree"
+  behavior: default
+  require_changes: no
