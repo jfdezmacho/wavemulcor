@@ -82,19 +82,16 @@ lmax <- 2
 
 set.seed(140859)
 
-demusd.modwt <- modwt(returns[,"DEM.USD"], wf, J)
-demusd.modwt.bw <- brick.wall(demusd.modwt, wf)
-jpyusd.modwt <- modwt(returns[,"JPY.USD"], wf, J)
-jpyusd.modwt.bw <- brick.wall(jpyusd.modwt, wf)
-rand.modwt <- modwt(rnorm(length(returns[,"DEM.USD"])), wf, J)
-rand.modwt.bw <- brick.wall(rand.modwt, wf)
+demusd.modwt <- brick.wall(modwt(returns[,"DEM.USD"], wf, J), wf)
+jpyusd.modwt <- brick.wall(modwt(returns[,"JPY.USD"], wf, J), wf)
+rand.modwt   <- brick.wall(modwt(rnorm(length(returns[,"DEM.USD"])), wf, J), wf)
 
 ##xx <- list(demusd.modwt.bw, jpyusd.modwt.bw)
-xx <- list(demusd.modwt.bw, jpyusd.modwt.bw, rand.modwt.bw)
+xx <- list(demusd.modwt, jpyusd.modwt, rand.modwt)
 names(xx) <- c("DEM.USD","JPY.USD","rand")
 
 \dontrun{
-# Note: WLMCR may take more than 10 seconds of CPU time on some systems
+# Note: WLMCC may take more than 10 seconds of CPU time on some systems
 
 Lst <- wave.local.multiple.cross.correlation(xx, M, window=window, lag.max=lmax)
 val <- Lst$val

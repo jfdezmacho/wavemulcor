@@ -72,15 +72,12 @@ J <- trunc(log2(N))-3
 lmax <- 36
 n <- dim(returns)[1]
 
-demusd.modwt <- modwt(returns[,"DEM.USD"], wf, J)
-demusd.modwt.bw <- brick.wall(demusd.modwt, wf)
-jpyusd.modwt <- modwt(returns[,"JPY.USD"], wf, J)
-jpyusd.modwt.bw <- brick.wall(jpyusd.modwt, wf)
-rand.modwt <- modwt(rnorm(length(returns[,"DEM.USD"])), wf, J)
-rand.modwt.bw <- brick.wall(rand.modwt, wf)
+demusd.modwt <- brick.wall(modwt(returns[,"DEM.USD"], wf, J), wf)
+jpyusd.modwt <- brick.wall(modwt(returns[,"JPY.USD"], wf, J), wf)
+rand.modwt   <- brick.wall(modwt(rnorm(length(returns[,"DEM.USD"])), wf, J), wf)
 
 ##xx <- list(demusd.modwt.bw, jpyusd.modwt.bw)
-xx <- list(demusd.modwt.bw, jpyusd.modwt.bw, rand.modwt.bw)
+xx <- list(demusd.modwt, jpyusd.modwt, rand.modwt)
 
 Lst <- wave.multiple.cross.correlation(xx, lmax)
 returns.cross.cor <- Lst$xy.mulcor[1:J,]
