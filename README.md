@@ -12,7 +12,7 @@ JFM
 [![CRAN
 status](https://www.r-pkg.org/badges/version/wavemulcor)](https://cran.r-project.org/package=wavemulcor)
 [![CRAN
-downloads](http://cranlogs.r-pkg.org/badges/grand-total/wavemulcor)](https://CRAN.R-project.org/package=wavemulcor)
+downloads](https://cranlogs.r-pkg.org/badges/grand-total/wavemulcor)](https://CRAN.R-project.org/package=wavemulcor)
 [![R build
 status](https://github.com/jfdezmacho/wavemulcor/workflows/R-CMD-check/badge.svg)](https://github.com/jfdezmacho/wavemulcor/actions)
 [![Codecov test

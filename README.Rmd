@@ -1,7 +1,8 @@
 ---
 title: "wavemulcor"
 author: "JFM"
-date: "`r format(Sys.time(), '%Y-%m-%d')`"
+# date: "`r format(Sys.time(), '%Y-%m-%d')`"
+date: "`r utils::packageDate('wavemulcor')`"
 output: github_document
 ---
 
@@ -21,7 +22,7 @@ knitr::opts_chunk$set(
 
 <!-- badges: start -->
 [![CRAN status](https://www.r-pkg.org/badges/version/wavemulcor)](https://cran.r-project.org/package=wavemulcor)
-[![CRAN downloads](http://cranlogs.r-pkg.org/badges/grand-total/wavemulcor)](https://CRAN.R-project.org/package=wavemulcor)
+[![CRAN downloads](https://cranlogs.r-pkg.org/badges/grand-total/wavemulcor)](https://CRAN.R-project.org/package=wavemulcor)
 [![R build status](https://github.com/jfdezmacho/wavemulcor/workflows/R-CMD-check/badge.svg)](https://github.com/jfdezmacho/wavemulcor/actions)
 [![Codecov test coverage](https://codecov.io/gh/jfdezmacho/wavemulcor/branch/master/graph/badge.svg)](https://codecov.io/gh/jfdezmacho/wavemulcor?branch=master)
 <!-- badges: end -->
@@ -32,7 +33,7 @@ knitr::opts_chunk$set(
 ## Overview
 
 wavemulcor is a set of Wavelet Routines for Global and Local Multiple Regression and Correlation. 
-The latest development version is 3.1.1.
+The latest development version is `r utils::packageVersion('wavemulcor')`.
 
 
 If you are new to wavemulcor, the best place to start is the [wavemulcor webpage](https://jfdezmacho.github.io/wavemulcor/).
