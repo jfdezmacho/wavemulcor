@@ -9,17 +9,19 @@ plot_local.multiple.cross.correlation <- #3.1.0
     val <- Lst$cor$vals
     low.ci <- Lst$cor$lower
     upp.ci <- Lst$cor$upper
+    lag.max <- trunc((ncol(val)-1)/2)
+    lag0 <- lag.max+1
     YmaxR <- Lst$YmaxR
     N <- length(YmaxR)
     xxnames <- names(Lst$data)
-    lagnames <- c(paste("Lead",lmax:1),paste("Lag",0:lmax))
+    lag.labs <- c(paste("lead",lag.max:1),paste("lag",0:lag.max))
     ymim <- -0.1
     if (length(Lst$data)<3) ymim <- -1
     par(mfcol=c(lmax+1,2), las=1, pty="m", mar=c(2,3,1,0)+.1, oma=c(1.2,1.2,0,0))
     mark <- paste0("\u00A9jfm-wavemulcor3.1.0_",Sys.time()," ")
-    for(i in c(-lmax:0,lmax:1)+lmax+1) {
+    for(i in c(-lmax:0,lmax:1)+lag0) {
       plot(1:N,val[,i], type="l", lty=1, ylim=c(ymim,1), xaxt=xaxt,
-              xlab="", ylab="", main=lagnames[i])
+              xlab="", ylab="", main=lag.labs[i])
       abline(h=0)                     ##Add Straight horiz
       lines(low.ci[,i], lty=1, col=2) ##Add Connected Line Segments to a Plot
       lines(upp.ci[,i], lty=1, col=2)
