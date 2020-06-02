@@ -1,7 +1,7 @@
 wavemulcor
 ================
 JFM
-2020-05-21
+2020-05-29
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
@@ -43,7 +43,7 @@ the development version of wavemulcor from GitHub:
 
 ``` r
 # install.packages("devtools")
-devtools::install_github("wavemulcor")
+devtools::install_github("jfdezmacho/wavemulcor")
 ```
 
 <!-- ## Cheatsheet -->
