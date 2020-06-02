@@ -15,10 +15,12 @@ heatmap_wave.local.multiple.correlation <- #3.1.0.
     if (is.null(ci)||ci=="center") {val <- sapply(cor,function(x){x[["val"]]})
     } else if (ci=="lower") {val <- sapply(cor,function(x){x[["lo"]]})
     } else if (ci=="upper"){val <- sapply(cor,function(x){x[["up"]]})}
+    clim <- range(sapply(cor,function(x){x[["val"]]}))
     mark <- paste0("\u00A9jfm-wavemulcor3.1.0_",Sys.time()," ")
     plot3D::image2D(z=val, x=1:nrow(val), y=1:ncol(val),
-            main="", sub="", xlab="", ylab="", cex.axis=0.75,
-            xaxt=xaxt, yaxt="n", clab=expression(varphi), colkey=list(cex.axis=0.75),
+            main="", sub="", xlab="", ylab="", 
+            xaxt=xaxt, yaxt="n", cex.axis=0.75,
+            colkey=list(cex.axis=0.75), clim=clim, clab=expression(varphi),
             rasterImage=T, contour=list(lwd=2, col=plot3D::jet.col(11)))
     if(xaxt!="s") {axis(side=1, at=at, labels=label, cex.axis=0.75)}
     axis(side=2, at=1:ncol(val),labels=scale.labs, las=1, cex.axis=0.75)
