@@ -70,17 +70,17 @@ plot_wave.local.multiple.regression <- #3.1.0.
       xvar <- t(t(which(abs(diff(sign(diff(reg.vals.sig))))==2,arr.ind=T))+c(1,0))
       text(xvar[,1], reg.vals.sig[xvar], labels=reg.vars[xvar], col=col[xvar], cex=.8)
       text(xvar[,1], reg.vals.sig[xvar], labels=reg.order[xvar],pos=1, col=col[xvar],cex=.5)
-      if (length(unique(YmaxR[[j]]))==1) {
-        mtext(xxnames[YmaxR[[j]][1]], at=1, side=3, line=-1, cex=.8)
-      } else {
-        xvaru <- t(t(which(diff(sign(diff(as.matrix(cor[[j]][["val"]]))))==-2))+1)
-        xvarl <- t(t(which(diff(sign(diff(as.matrix(cor[[j]][["val"]]))))==2))+1)
-        xvar <- t(t(which(abs(diff(sign(diff(as.matrix(cor[[j]][["val"]])))))==2))+1)
-        xvar2 <- xvar[-length(xvar)]+diff(xvar)/2
-        mtext(xxnames[YmaxR[[j]][xvaru]], at=xvaru, side=3, line=-.5, cex=.5)
-        mtext(xxnames[YmaxR[[j]][xvar2]], at=xvar2, side=3, line=-1, cex=.5)
-        mtext(xxnames[YmaxR[[j]][xvarl]], at=xvarl, side=3, line=-1.5, cex=.5)
-      }
+      # if (length(unique(YmaxR[[j]]))==1) {
+      #   mtext(xxnames[YmaxR[[j]][1]], at=1, side=3, line=-1, cex=.8)
+      # } else {
+      #   xvaru <- t(t(which(diff(sign(diff(as.matrix(cor[[j]][["val"]]))))==-2))+1)
+      #   xvarl <- t(t(which(diff(sign(diff(as.matrix(cor[[j]][["val"]]))))==2))+1)
+      #   xvar <- t(t(which(abs(diff(sign(diff(as.matrix(cor[[j]][["val"]])))))==2))+1)
+      #   xvar2 <- xvar[-length(xvar)]+diff(xvar)/2
+      #   mtext(xxnames[YmaxR[[j]][xvaru]], at=xvaru, side=3, line=-.5, cex=.5)
+      #   mtext(xxnames[YmaxR[[j]][xvar2]], at=xvar2, side=3, line=-1, cex=.5)
+      #   mtext(xxnames[YmaxR[[j]][xvarl]], at=xvarl, side=3, line=-1.5, cex=.5)
+      # }
     }
     par(las=0)
     # mtext('time', side=1, outer=TRUE, adj=0.5)
