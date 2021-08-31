@@ -1,7 +1,7 @@
 wavemulcor
 ================
 JFM
-2021-08-31
+2021-08-29
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
@@ -22,7 +22,7 @@ coverage](https://codecov.io/gh/jfdezmacho/wavemulcor/branch/master/graph/badge.
 ## Overview
 
 wavemulcor is a set of Wavelet Routines for Global and Local Multiple
-Regression and Correlation. The latest development version is 3.1.1.
+Regression and Correlation. The latest development version is 3.1.2.
 
 If you are new to wavemulcor, the best place to start is the [wavemulcor
 webpage](https://jfdezmacho.github.io/wavemulcor/).
@@ -63,7 +63,7 @@ questions and other discussion, please use
 [community.rstudio.com](https://community.rstudio.com/).
 <!-- or the [manipulatr mailing list](https://groups.google.com/group/manipulatr). -->
 
------
+------------------------------------------------------------------------
 
 Please note that this project is released with a [Contributor Code of
 Conduct](http://contributor-covenant.org/version/1/0/0/) adopted from
