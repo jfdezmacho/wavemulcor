@@ -25,6 +25,7 @@ knitr::opts_chunk$set(
 [![CRAN downloads](https://cranlogs.r-pkg.org/badges/grand-total/wavemulcor)](https://CRAN.R-project.org/package=wavemulcor)
 [![R build status](https://github.com/jfdezmacho/wavemulcor/workflows/R-CMD-check/badge.svg)](https://github.com/jfdezmacho/wavemulcor/actions)
 [![Codecov test coverage](https://codecov.io/gh/jfdezmacho/wavemulcor/branch/master/graph/badge.svg)](https://codecov.io/gh/jfdezmacho/wavemulcor?branch=master)
+[![R-CMD-check](https://github.com/jfdezmacho/wavemulcor/workflows/R-CMD-check/badge.svg)](https://github.com/jfdezmacho/wavemulcor/actions)
 <!-- badges: end -->
 
 
