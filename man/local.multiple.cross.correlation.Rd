@@ -31,7 +31,7 @@ as long as at least the first four characters are entered.}
   \item{ymaxr}{index number of the variable whose correlation is calculated against a linear combination of the rest, otherwise at each wavelet level lmc chooses the one maximizing the multiple correlation.}
 }
 \details{
-The routine calculates a set of  time series of  multiple cross-correlations, one per lagand lead) out of \eqn{n} variables.
+The routine calculates a set of  time series of  multiple cross-correlations, one per lag and lead) out of \eqn{n} variables.
 }
 \value{
 List of four elements:

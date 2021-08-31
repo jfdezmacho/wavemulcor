@@ -27,7 +27,7 @@ wave.multiple.regression(xx, N, p = 0.975, ymaxr=NULL)
 }
 }
 \details{
- TThe routine calculates one single set of wavelet multiple regressions out of \eqn{n} variables
+ The routine calculates one single set of wavelet multiple regressions out of \eqn{n} variables
  that can be plotted in a single graph.
 }
 \value{

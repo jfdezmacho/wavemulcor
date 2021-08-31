@@ -1,4 +1,4 @@
-﻿\name{local.multiple.regression}
+\name{local.multiple.regression}
 \alias{local.multiple.regression}
 \alias{lmr}
 \title{
@@ -31,7 +31,7 @@ as long as at least the first four characters are entered.}
  of the rest, otherwise at each wavelet level lmc chooses the one maximizing the multiple correlation.}
 }
 \details{
-The routine calculates a set of time series of multiple regression coeffcients out of \eqn{n} variables.
+The routine calculates a set of time series of multiple regression coefficients out of \eqn{n} variables.
 }
 \value{
 List of four elements:
