@@ -2,7 +2,7 @@
 title: "**wavemulcor:**"
 subtitle: "Wavelet Routines for Global and Local\n\n 
           Multiple Regression and Correlation"
-package: wavemulcor V. 3.1.0
+package: wavemulcor V. 3.1.2
 date: "`r Sys.Date()`"
 author: J Fernández-Macho\cr
         Dpt.\ of Quantitative Methods\cr
@@ -20,11 +20,14 @@ abstract: |
              The code is based on the calculation, at each wavelet scale, of the 
              square root of the coefficient of determination in a linear combination 
              of variables for which such coefficient of determination is a maximum. 
-# output: rmarkdown::html_vignette
-output: rmarkdown::pdf_document
-classoption: a4paper
+# header-includes:
+#    - \usepackage{framed}
+# output:
+  # rmarkdown::pdf_document:
+  #   keep_tex: true
+  #   keep_md: true
+# classoption: a4paper
 bibliography: "jfbib4wavemulcor.bib"
-# csl: "science.csl"
 toc: TRUE
 vignette: >
   %\VignetteIndexEntry{wavemulcor}

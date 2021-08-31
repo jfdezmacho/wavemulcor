@@ -1,7 +1,7 @@
 Package: wavemulcor
 Type: Package
 Title: Wavelet Routines for Global and Local Multiple Regression and Correlation
-Version: 3.1.1
+Version: 3.1.2
 Authors@R: person("Javier", "Fernandez-Macho", email = "javier.fernandezmacho@ehu.es",
         role = c("aut", "cre"), comment=c(ORCID = "0000-0002-5970-4382"))
 Description: Wavelet routines that calculate single sets of wavelet multiple regressions and correlations, 
