@@ -14,7 +14,7 @@ heatmap_wave.multiple.cross.correlation <- #3.1.0.
     plot3D::image2D(z=val, x=1:nrow(val), y=1:ncol(val),
             main="", sub="", xlab="", ylab="", cex.axis=0.75,
             xaxt="n", yaxt="n", clab = expression(varphi), colkey=list(cex.axis=0.75),
-            rasterImage=T, contour=list(lwd=2, col=plot3D::jet.col(11)))
+            rasterImage=TRUE, contour=list(lwd=2, col=plot3D::jet.col(11)))
     axis(side=1, at=seq(1,2*lmax+1,by=lmax/by), labels=seq(-lmax,lmax,by=lmax/by), cex.axis=0.75)
     axis(side=2, at=1:ncol(val),labels=scale.labs, las=1, cex.axis=0.75)
     text(x=grconvertX(0.1,from="npc"), y=grconvertY(0.98,from="npc"), labels=mark,

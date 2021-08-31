@@ -42,8 +42,8 @@ plot_wave.local.multiple.cross.regression <- #3.1.0
         cairo_pdf(paste0("plot_",pdf.write,"_WLMCR_",level.lab[j],".pdf"), width=8.27,height=11.69)
       mark <- paste0("\u00A9jfm-wavemulcor3.1.0_",Sys.time()," ")
       par(mfcol=c(lmax+1,2), las=1, pty="m", mar=c(2,3,1,0)+.1, oma=c(1.2,1.2,1.2,0))
-      ymin <- min(vj$rval,na.rm=T) #head(unique(sort(vj$rval)))[2]
-      ymax <- max(vj$rval,na.rm=T)
+      ymin <- min(vj$rval,na.rm=TRUE) #head(unique(sort(vj$rval)))[2]
+      ymax <- max(vj$rval,na.rm=TRUE)
       for(i in c(-lmax:0,lmax:1)+lmax+1) {
         matplot(1:N,vj$rval[,i,], ylim=c(ymin-0.1,ymax+0.1),
                 type="n", xaxt=xaxt, lty=3, col=8,
@@ -62,7 +62,7 @@ plot_wave.local.multiple.cross.regression <- #3.1.0
         mtext(mark, side=1, line=-1, adj=1, col=rgb(0,0,0,.1),cex=.2)
         col <- (vj$rord[,i,]<=3)*1 +(vj$rord[,i,]>3)*8
         # xvar <- seq(1,N,M)
-        xvar <- t(t(which(abs(diff(sign(diff(vj$rval[,i,]))))==2,arr.ind=T))+c(1,0))
+        xvar <- t(t(which(abs(diff(sign(diff(vj$rval[,i,]))))==2,arr.ind=TRUE))+c(1,0))
         text(xvar, vj$rval[xvar,i,2], labels=reg.vars[xvar,2], col=col,cex=.3)
         text(xvar, vj$rval[xvar,i,], labels=vj$rord[xvar,i,],pos=1, col=col,cex=.3)
         if (length(unique(YmaxR[[j]]))==1) {

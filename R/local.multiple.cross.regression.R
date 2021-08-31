@@ -29,7 +29,7 @@ local.multiple.cross.regression <- #3.0.0
     d <- length(xx)       #number of series
     dd <- d*(d-1)/2       #number of correlations
     N <- nrow(xx)         #number of observations
-    if(is.null(lag.max)) {lag.max=trunc(sqrt(length(xx[[1]]))/2)}
+    if(is.null(lag.max)) {lag.max <- trunc(sqrt(length(xx[[1]]))/2)}
     lm <- min(length(xx[[1]])-1, lag.max, na.rm=TRUE)
     val <- lo <- up <- matrix(nrow=N,ncol=2*lm+1)
     YmaxR <- matrix(nrow=N)

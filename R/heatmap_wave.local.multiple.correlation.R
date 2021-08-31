@@ -21,7 +21,7 @@ heatmap_wave.local.multiple.correlation <- #3.1.0.
             main="", sub="", xlab="", ylab="", 
             xaxt=xaxt, yaxt="n", cex.axis=0.75,
             colkey=list(cex.axis=0.75), clim=clim, clab=expression(varphi),
-            rasterImage=T, contour=list(lwd=2, col=plot3D::jet.col(11)))
+            rasterImage=TRUE, contour=list(lwd=2, col=plot3D::jet.col(11)))
     if(xaxt!="s") {axis(side=1, at=at, labels=label, cex.axis=0.75)}
     axis(side=2, at=1:ncol(val),labels=scale.labs, las=1, cex.axis=0.75)
     text(x=grconvertX(0.1,from="npc"), y=grconvertY(0.98,from="npc"), labels=mark,

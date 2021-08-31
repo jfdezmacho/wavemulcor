@@ -33,7 +33,7 @@ heatmap_wave.local.multiple.cross.correlation <- #3.1.1
                         main=lag.labs[i], sub="", xlab="", ylab="",
                         xaxt=xaxt, yaxt="n", cex.axis=0.75,
                         colkey=colkey, clim=clim, clab=expression(varphi),
-                        rasterImage=T, contour=list(lwd=2, col=plot3D::jet.col(11)))
+                        rasterImage=TRUE, contour=list(lwd=2, col=plot3D::jet.col(11)))
         text(x=grconvertX(0.1,from="npc"), y=grconvertY(0.97,from="npc"), labels=mark,
              col=rgb(0,0,0,.1),cex=.2)
         par(las=0)
@@ -59,7 +59,7 @@ heatmap_wave.local.multiple.cross.correlation <- #3.1.1
                         main=level.labs[j], sub="", xlab="", ylab="",
                         xaxt=xaxt, yaxt="n", cex.axis=0.75,
                         colkey=colkey, clim=clim, clab=expression(varphi),
-                        rasterImage=T, contour=list(lwd=2, col=plot3D::jet.col(11)))
+                        rasterImage=TRUE, contour=list(lwd=2, col=plot3D::jet.col(11)))
         text(x=grconvertX(0.1,from="npc"), y=grconvertY(0.97,from="npc"), labels=mark,
              col=rgb(0,0,0,.15),cex=.2)
         par(las=0)

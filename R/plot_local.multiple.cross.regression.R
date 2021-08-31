@@ -41,8 +41,8 @@ plot_local.multiple.cross.regression <- #3.1.0
     # requireNamespace(RColorBrewer)
     mycolors <- RColorBrewer::brewer.pal(n=8, name="Dark2")
     par(mfcol=c(lmax+1,2), las=1, pty="m", mar=c(2,3,1,0)+.1, oma=c(1.2,1.2,0,0))
-    ymin <- min(reg.vals,na.rm=T) #head(unique(sort(reg.vals[,,-1])))[2]
-    ymax <- max(reg.vals,na.rm=T)
+    ymin <- min(reg.vals,na.rm=TRUE) #head(unique(sort(reg.vals[,,-1])))[2]
+    ymax <- max(reg.vals,na.rm=TRUE)
     mark <- paste0("\u00A9jfm-wavemulcor3.1.0_",Sys.time()," ")
     for(i in c(-lmax:0,lmax:1)+lag0) {
       matplot(1:N,reg.vals[,i,], ylim=c(ymin-0.1,ymax+0.1),
@@ -62,7 +62,7 @@ plot_local.multiple.cross.regression <- #3.1.0
       mtext(mark, side=1, line=-1, adj=1, col=rgb(0,0,0,.1),cex=.2)
       col <- (reg.order[,i,]<=3)*1 +(reg.order[,i,]>3)*8
       # xvar <- seq(1,N,M)
-      xvar <- t(t(which(abs(diff(sign(diff(reg.vals[,i,]))))==2,arr.ind=T))+c(1,0))
+      xvar <- t(t(which(abs(diff(sign(diff(reg.vals[,i,]))))==2,arr.ind=TRUE))+c(1,0))
       text(xvar, reg.vals[xvar,i,], labels=reg.vars[xvar,], col=col,cex=.3)
       text(xvar, reg.vals[xvar,i,], labels=reg.order[xvar,i,],pos=1, col=col,cex=.3)
       if (length(unique(YmaxR))==1) {

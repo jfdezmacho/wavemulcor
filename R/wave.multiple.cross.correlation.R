@@ -6,7 +6,7 @@ wave.multiple.cross.correlation <- #2.2.3
     dd <- d*(d-1)/2       #number of correlations
     l <- length(xx[[1]])  #number of scales J+1 (wavelet coefficients at levels 1 to J plus the scaling coeffs at level J+1)
     N <- length(xx[[1]][[1]]) #number of observations
-    if(is.null(lag.max)) {lag.max=trunc(sqrt(length(xx[[1]][[l]]))/2)}
+    if(is.null(lag.max)) {lag.max <- trunc(sqrt(length(xx[[1]][[l]]))/2)}
     lm <- min(length(xx[[1]][[l]])-1, lag.max, na.rm=TRUE)
     x.var <- vector("list", d)
     for(j in 1:d) {

@@ -27,8 +27,8 @@ plot_wave.multiple.regression <- #3.1.0.
     # requireNamespace(RColorBrewer)
     mycolors <- RColorBrewer::brewer.pal(n = 8, name = "Dark2")
     par(mfrow=c(1,1), las=1, mar=c(5,4,4,2)+.1)
-    ymin <- min(vals.sig,na.rm=T)
-    ymax <- max(vals.sig,na.rm=T)
+    ymin <- min(vals.sig,na.rm=TRUE)
+    ymax <- max(vals.sig,na.rm=TRUE)
     x <- 2^(0:(J-1))
     mark <- paste0("\u00A9jfm-wavemulcor3.1.0_",Sys.time()," ")
     matplot(x,vals, log="x", ylim=c(ymin-0.1,ymax+0.1),

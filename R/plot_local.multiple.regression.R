@@ -38,8 +38,8 @@ plot_local.multiple.regression <- #3.1.0.
     # requireNamespace(RColorBrewer)
     mycolors <- RColorBrewer::brewer.pal(n=8, name="Dark2")
     par(mfrow=c(1,1), las=1, mar=c(5,4,4,2)+.1)
-    ymin <- min(reg.vals.sig,na.rm=T)
-    ymax <- max(reg.vals.sig,na.rm=T)
+    ymin <- min(reg.vals.sig,na.rm=TRUE)
+    ymax <- max(reg.vals.sig,na.rm=TRUE)
     mark <- paste0("\u00A9jfm-wavemulcor3.1.0_",Sys.time()," ")
     matplot(1:N,reg.vals, ylim=c(ymin-0.1,ymax+0.1),
             type="n", xaxt=xaxt, lty=3, col=8,
