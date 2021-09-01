@@ -66,6 +66,6 @@ questions and other discussion, please use
 ------------------------------------------------------------------------
 
 Please note that this project is released with a [Contributor Code of
-Conduct](http://contributor-covenant.org/version/1/0/0/) adopted from
-the [Contributor Covenant](http://contributor-covenant.org). By
+Conduct](https://contributor-covenant.org/version/1/0/0/) adopted from
+the [Contributor Covenant](https://contributor-covenant.org). By
 participating in this project you agree to abide by its terms.
