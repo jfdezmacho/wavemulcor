@@ -80,5 +80,5 @@ For questions and other discussion, please use [community.rstudio.com](https://c
 <!-- or the [manipulatr mailing list](https://groups.google.com/group/manipulatr). -->
 
 ---
-Please note that this project is released with a [Contributor Code of Conduct](https://contributor-covenant.org/version/1/0/0/) adopted from the [Contributor Covenant](https://contributor-covenant.org).
+Please note that this project is released with a [Contributor Code of Conduct](https://www.contributor-covenant.org/version/1/0/0/) adopted from the [Contributor Covenant](https://www.contributor-covenant.org/).
 By participating in this project you agree to abide by its terms.

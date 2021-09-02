@@ -17,6 +17,7 @@ downloads](https://cranlogs.r-pkg.org/badges/grand-total/wavemulcor)](https://CR
 status](https://github.com/jfdezmacho/wavemulcor/workflows/R-CMD-check/badge.svg)](https://github.com/jfdezmacho/wavemulcor/actions)
 [![Codecov test
 coverage](https://codecov.io/gh/jfdezmacho/wavemulcor/branch/master/graph/badge.svg)](https://codecov.io/gh/jfdezmacho/wavemulcor?branch=master)
+[![R-CMD-check](https://github.com/jfdezmacho/wavemulcor/workflows/R-CMD-check/badge.svg)](https://github.com/jfdezmacho/wavemulcor/actions)
 <!-- badges: end -->
 
 ## Overview
@@ -66,6 +67,6 @@ questions and other discussion, please use
 ------------------------------------------------------------------------
 
 Please note that this project is released with a [Contributor Code of
-Conduct](https://contributor-covenant.org/version/1/0/0/) adopted from
-the [Contributor Covenant](https://contributor-covenant.org). By
-participating in this project you agree to abide by its terms.
+Conduct](https://www.contributor-covenant.org/version/1/0/0/) adopted
+from the [Contributor Covenant](https://www.contributor-covenant.org/).
+By participating in this project you agree to abide by its terms.
